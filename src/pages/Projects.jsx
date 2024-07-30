@@ -45,6 +45,10 @@ const Projects = () => {
 </div>
     </div>
 
+    
+    
+<center>
+
       <div className="project-container">
       <div className="latest">
       <h1>Review my <span style={{color:"aqua"}}>Latest</span> projects</h1>
@@ -59,7 +63,7 @@ const Projects = () => {
 
   <a href="https://weather-example-nu.vercel.app/"><button>Git access to the code</button></a>
   </div>
-  <img src="weather.png" alt="" width={300} height={200}/>
+  {/* <img src="weather.png" alt="" width={300} height={200}/> */}
   </div>
   <div className="project1">
   
@@ -70,7 +74,7 @@ const Projects = () => {
 
   <a href="https://signature-xi-one.vercel.app/"><button>Git access to the code</button></a>
   </div>
-  <img src="signature.png" alt="" width={300} height={200}/>
+  {/* <img src="signature.png" alt="" width={300} height={200}/> */}
   </div>
 
 
@@ -82,7 +86,7 @@ const Projects = () => {
 
   <a href="https://jokes-api-zeta.vercel.app/"><button>Git access to the code</button></a>
   </div>
-  <img src="joke.png" alt="" width={350} height={170}/>
+  {/* <img src="joke.png" alt="" width={350} height={170}/> */}
   </div>
 
 
@@ -94,7 +98,7 @@ const Projects = () => {
 
   <a href="https://simple-calculator-gules-three.vercel.app/"><button>Git access to the code</button></a>
   </div>
-  <img src="calculator.png" alt="" width={300} height={200}/>
+  {/* <img src="calculator.png" alt="" width={300} height={200}/> */}
   </div>
 
 
@@ -107,7 +111,7 @@ const Projects = () => {
 
   <a href="https://simple-shopping-cart-omega.vercel.app/"><button>Git access to the code</button></a>
   </div>
-  <img src="shopping.png" alt="" width={500} height={300}/>
+  {/* <img src="shopping.png" alt="" width={500} height={300}/> */}
   </div>
 
 
@@ -120,13 +124,14 @@ const Projects = () => {
 
   <a href="https://registration-page-kappa.vercel.app/"><button>Git access to the code</button></a>
   </div>
-  <img src="registration.png" alt="" width={300} height={200}/>
+  {/* <img src="registration.png" alt="" width={300} height={200}/> */}
   </div>
 
 
   
 </div>
       </div>
+      </center>
         
         </>
           )

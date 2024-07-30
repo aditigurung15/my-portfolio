@@ -101,7 +101,7 @@ const Home = () => {
     development, blending design and technical skills to craft engaging
     user experiences. You meticulously translate concepts into responsive,
     interactive interfaces that users love to navigate. Your toolkit
-    includes HTML, CSS, and JavaScript, alongside frameworks like React, 
+    includes HTML, CSS, and JavaScript, alongside library like React, 
     enabling to bring designs to life seamlessly across
     devices. The role is pivotal in shaping how users perceive and
     interact with websites and applications, making usability and
@@ -114,9 +114,13 @@ const Home = () => {
 </div>
  
 </div>
+
+
 </section>
 
+
 <section className="service">
+<center>
 <div className="services">
       <div>
 
@@ -126,8 +130,7 @@ const Home = () => {
           <h3>Website Development</h3>
           <p>
             Can build custom websites and admin panels from scratch or using
-            Figma to ReactJS, Figma to NextJS, and PSD to HTML, etc. Develop
-            responsive, visually appealing, and user-friendly interfaces.
+            Figma to ReactJs. Develop responsive, visually appealing, and user-friendly interfaces.
           </p>
           </div>
 
@@ -170,8 +173,11 @@ const Home = () => {
         </div>
         </div>
      </div>
+     </center>
 </section>
 
+
+<center>
 <section className="project">
 
 <div className="project-container">
@@ -188,7 +194,7 @@ const Home = () => {
 
   <a href="https://github.com/aditigurung15/weather-example"><button>Git access to the code</button></a>
   </div>
-  <img src="weather.png" alt="" width={300} height={200}/>
+  {/* <img src="weather.png" alt="" width={300} height={200}/> */}
   </div>
   <div className="project1">
   
@@ -199,7 +205,7 @@ const Home = () => {
 
   <a href="https://github.com/aditigurung15/weather-example"><button>Git access to the code</button></a>
   </div>
-  <img src="signature.png" alt="" width={300} height={200}/>
+  {/* <img src="signature.png" alt="" width={300} height={200}/> */}
   </div>
 
 
@@ -211,7 +217,7 @@ const Home = () => {
 
   <a href="https://github.com/aditigurung15/weather-example"><button>Git access to the code</button></a>
   </div>
-  <img src="joke.png" alt="" width={350} height={170}/>
+  {/* <img src="joke.png" alt="" width={350} height={170}/> */}
   </div>
 
 
@@ -223,7 +229,7 @@ const Home = () => {
 
   <a href="https://github.com/aditigurung15/weather-example"><button>Git access to the code</button></a>
   </div>
-  <img src="calculator.png" alt="" width={300} height={200}/>
+  {/* <img src="calculator.png" alt="" width={300} height={200}/> */}
   </div>
 
 
@@ -236,7 +242,7 @@ const Home = () => {
 
   <a href="https://github.com/aditigurung15/weather-example"><button>Git access to the code</button></a>
   </div>
-  <img src="shopping.png" alt="" width={500} height={300}/>
+  {/* <img src="shopping.png" alt="" width={500} height={300}/> */}
   </div>
 
 
@@ -249,7 +255,7 @@ const Home = () => {
 
   <a href="https://github.com/aditigurung15/weather-example"><button>Git access to the code</button></a>
   </div>
-  <img src="registration.png" alt="" width={300} height={200}/>
+  {/* <img src="registration.png" alt="" width={300} height={200}/> */}
   </div>
 
 
@@ -257,6 +263,7 @@ const Home = () => {
 </div>
       </div>
 </section>
+</center>
 
 
 

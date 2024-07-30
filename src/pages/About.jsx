@@ -74,7 +74,7 @@ const frontendSkill=(
           development, blending design and technical skills to craft engaging
           user experiences. Meticulously translate concepts into responsive,
           interactive interfaces that users love to navigate. Your toolkit
-          includes HTML, CSS, and JavaScript, alongside frameworks like React, 
+          includes HTML, CSS, and JavaScript, alongside library like React, 
           enabling to bring designs to life seamlessly across
           devices. The role is pivotal in shaping how users perceive and
           interact with websites and applications, making usability and
@@ -93,14 +93,7 @@ const frontendSkill=(
   
 
 
-  <div className="technical">
-        <h2> Technical Proficiency</h2>
-        <div className="technical-skills">
-          <button type="button" onClick={frontend}>Frontend</button>
-          <button>Tools</button>
-          <button>Soft-skills</button>
-        </div>
-      </div>
+
 
   </>
   );
