@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&family=Playwrite+RO:wght@100..400&display=swap');
+
+html,body{
+  min-height: 100%;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+scroll-snap-type: Y mandatory;
+scroll-behavior: smooth;
+overflow-x: hidden;
+font-family: "Playwrite RO", cursive;
+color: black;
+background-image: radial-gradient(yellow, orange, #9BDE7E);}
+
+#root{
+  width: 100%;
+  height: 100%;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  border-radius: 0.5rem;
+}
+.mainContainer {
+  /* position: relative; */
+  
+  display: flex;
+  justify-content: space-between;
+  /* gap: 20px; */
+  /* align-items: center; */
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  color: rgb(98, 93, 93);
+  background-color: rgb(244, 195, 195);
+ 
+}
+.mainContainer .left-side{
+  margin-top: -150px;
+  width: 25%;
+  height: 90vh;
+  position: sticky;
+  border: 2px solid brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.mainContainer .left-side img{
+  width: 80px;
+  height: 80px;
+  /* margin: 20px 0px; */
+  border-radius: 50%;
+}
+
+.mainContainer .left-side .intro h3{
+  font-size: 18px;
+  display: block;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.bio .bio2{
+  display: flex;
+  gap: 30px;
+ 
+  align-items: center;
+  margin-bottom: -30px;
+}
+
+.bio .bio2 pre{
+  font-size: 16px;
+}
+.mainContainer .left-side .intro .job{
+  background-color: aqua;
+  border-radius: 10px;
+  padding: 10px;
+}
+.mainContainer .left-side .social-media{
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  font-size: 32px;
+}
+.mainContainer .left-side .social-media i{
+color: aliceblue;
+}
+.maincontainer section{
+  height: 100vh;
+ 
+}
+.mainContainer .right-side{
+  width: 75%;
+}
+
+.bubble {
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid; 
+  border-radius: 50%;
+  animation: float 40s ease-out infinite;
+}
+
+.navcontainer .navcon{
+  margin: auto;
+  margin-top: 30px;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  z-index: -1;
+}
+
+.navcontainer .navcon h3{
+  color: aqua;
+  font-family: "Playwrite NL", cursive;
+}
+
+.navcontainer .navcon ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: black;
+  text-align: end;
+  float: right;
+
+}
+
+
+.navcontainer ul li{
+  list-style: none;
+}
+
+/* .home-container{
+  display: flex;
+  flex-direction: column;
+} */
+
+ .container{
+  margin: auto;
+  display: none;
+  width: 70%;
+  position: relative;
+  top: -40px;
+}
+
+.container ul {
+background-color: aqua;
+
+  margin-top: 10px;
+}
+ .container ul li{
+  list-style: none;
+ }
+
+ 
+.nenu{
+  display: none;
+  list-style: none;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: aquamarine;
+  text-align: start;
+  padding: 20px;
+  gap: 10px;
+
+}
+
+.nenu.open{
+  width: 94%;
+display: block;
+margin-bottom: 20px;
+justify-content: flex-start;
+align-items: flex-start;
+list-style: none;
+text-align: start;
+background-color: aquamarine;
+gap: 20px;
+padding: 20px;
+}
+
+.homes{
+  margin: auto;
+  /* margin-top: -60px; */
+  width: 70%;
+  height: 70vh;
+
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: center; */
+background-color: white;
+  
+}
+.homes .left-home{
+width: 50%
+}
+/* .homes .left-home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+.homes .left-home h2{
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+.homes .left-home h3{
+  margin-top: -30px;
+}
+
+.homes .left-home p{
+  margin-top: -30px;
+}
+
+
+.homes .left-home button{
+  padding: 15px;
+  background-color: aqua;
+  border-radius: 10px;
+}
+
+.homes .left-home button:hover{
+  background-color: white;
+  color: aqua;
+}
+
+.homes .right-home .right-image{
+width: 150px;
+height: 150px;
+border-radius: 50%;
+box-shadow: rgba(204, 245, 3, 0.35) 0px 5px 15px;
+z-index: 10;
+
+
+animation-name: right-image;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-fill-mode: forwards;
+animation-timing-function: ease-in-out;
+transition: all 5s ease-in-out;
+}
+
+
+
+.about{
+  margin: auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+
+.about .about-me{
+  width: 50%;
+}
+.about img{
+  width: 300px;
+  height: 300px;
+  border: 1px solid yellow;
+  border-radius: 50%;
+  animation-name: right-image;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-fill-mode: forwards;
+animation-timing-function: ease-in-out;
+transition: all 5s ease-in-out;
+}
+
+.technical{
+  margin-top: 20px;
+}
+
+.technical h2{
+  margin: auto;
+  width: 70%;
+}
+
+.technical-skills{
+  margin: auto;
+  width: 70%;
+  display: flex;
+  gap: 10px;
+}
+.technical-skills button{
+  padding: 30px 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service {
+margin-top: 20px;
+}
+.services{
+  margin: auto;
+  /* margin-top: -20px; */
+  width: 70%;
+  height: 150vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.services div{
+  display: flex;
+}
+
+.services h2{
+  text-align: center;
+}
+
+.services div .website-dev1{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-wrap: wrap;
+  gap: 20px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+
+
+.services div .website-dev1 div{
+  height: 400px;
+  box-shadow: rgba(204, 245, 3, 0.35) 0px 5px 15px;
+}
+
+.services div .website-dev2{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.services div .website-dev2 div{
+  width: 40%;
+  height: 400px;
+  box-shadow: rgba(204, 245, 3, 0.35) 0px 5px 15px;
+  text-wrap: wrap;
+}
+
+.project{
+  margin-top: 50px;
+}
+
+.project-container{
+  margin: auto;
+  width: 70%;
+  margin-top: -22px;
+  background-color: white;
+}
+
+.project-container .latest{
+  padding-top: 50px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 20px;
+
+}
+
+.project-container .projects{
+  box-shadow: rgba(232, 244, 5, 0.988) 0px 5px 15px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.projects .project1{
+  margin: 30px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: rgba(232, 244, 5, 0.988) 0px 5px 15px;
+  gap: 40px;
+}
+
+.contact{
+  margin: auto;
+  width: 70%;
+  height: auto;
+}
+
+.contact .contact-container {
+  max-width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact .container h1 {
+  text-align: center;
+  color: #333;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+@keyframes right-image{
+  0%, 100%{
+border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+
+  }
+
+  50%{
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    
+      }
+}
+
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-300vh);
+  }
+  100% {
+    transform: translateY(-300vh);
+  }
+
+  200% {
+    transform: translateY(-300vh);
+  }
+
+  
+  250% {
+    transform: translateY(-300vh);
+  }
+  
+  300% {
+    transform: translateY(-300vh);
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .navcontainer .navcon ul{
+    display: none;
+  }
+
+ .container{
+  /* display: flex; */
+    display: block;
+    text-align: end;
+  }
+
+  .homes{
+margin-top: -60px;
+padding-top: 60px;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  .services div .website-dev1 div{
+    height: 600px;
+  }
+
+  .services div .website-dev2 div{
+    height: 500px;
+}}
