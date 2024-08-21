@@ -251,9 +251,9 @@ const Home = () => {
   <div className="project-info">
   <p>Project 6: Simple Registration Page</p>
   <p>The app has been crafted using React library.</p>
-  <p>The app performs airthmetic operations and calculates the result.</p>
+  <p>The app will help to register a user and login tp the page. User can log out bit clicking on the logout button.</p>
 
-  <a href="https://vercel.com/aditis-projects-80f0ebec/registration-page" target="_blank"><button>Git access to the code</button></a>
+  <a href="https://registration-page-kappa.vercel.app/" target="_blank"><button>Git access to the code</button></a>
   </div>
   {/* <img src="registration.png" alt="" width={300} height={200}/> */}
   </div>
