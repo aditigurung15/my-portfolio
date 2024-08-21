@@ -192,7 +192,7 @@ const Home = () => {
   <p>The app has been crafted using HTML, CSS and Javascript.
   It sets the details of weather for every 3 hours.</p>
 
-  <a href="https://github.com/aditigurung15/weather-example"><button>Git access to the code</button></a>
+  <a href="https://weather-example-nu.vercel.app/" target="_blank"><button>Git access to the code</button></a>
   </div>
   {/* <img src="weather.png" alt="" width={300} height={200}/> */}
   </div>
@@ -203,7 +203,7 @@ const Home = () => {
   <p>The app has been crafted using HTML, CSS and Javascript.</p>
   <p>Enabling the feature to create, clear, download and retrieve a signature</p>
 
-  <a href="https://github.com/aditigurung15/weather-example"><button>Git access to the code</button></a>
+  <a href="https://signature-xi-one.vercel.app/" target="_blank"><button>Git access to the code</button></a>
   </div>
   {/* <img src="signature.png" alt="" width={300} height={200}/> */}
   </div>
@@ -215,7 +215,7 @@ const Home = () => {
   <p>The app has been crafted using HTML, CSS and Javascript.</p>
   <p>The interface has a button that generates joke upon clicking.</p>
 
-  <a href="https://github.com/aditigurung15/weather-example"><button>Git access to the code</button></a>
+  <a href="https://jokes-api-zeta.vercel.app/" target="_blank"><button>Git access to the code</button></a>
   </div>
   {/* <img src="joke.png" alt="" width={350} height={170}/> */}
   </div>
@@ -227,7 +227,7 @@ const Home = () => {
   <p>The app has been crafted using React library.</p>
   <p>The app performs airthmetic operations and calculates the result.</p>
 
-  <a href="https://github.com/aditigurung15/weather-example"><button>Git access to the code</button></a>
+  <a href="https://simple-calculator-gules-three.vercel.app/" target="_blank"><button>Git access to the code</button></a>
   </div>
   {/* <img src="calculator.png" alt="" width={300} height={200}/> */}
   </div>
@@ -240,7 +240,7 @@ const Home = () => {
   <p>The app has been crafted using React library.</p>
   <p>The app adds an item to the cart and removes it on the clicking the add and remove button. Two buttons '+' and '-' are also present to increase and decrease no. of products.</p>
 
-  <a href="https://github.com/aditigurung15/weather-example"><button>Git access to the code</button></a>
+  <a href="https://simple-shopping-cart-omega.vercel.app/" target="_blank"><button>Git access to the code</button></a>
   </div>
   {/* <img src="shopping.png" alt="" width={500} height={300}/> */}
   </div>
@@ -253,7 +253,7 @@ const Home = () => {
   <p>The app has been crafted using React library.</p>
   <p>The app performs airthmetic operations and calculates the result.</p>
 
-  <a href="https://github.com/aditigurung15/weather-example"><button>Git access to the code</button></a>
+  <a href="https://vercel.com/aditis-projects-80f0ebec/registration-page" target="_blank"><button>Git access to the code</button></a>
   </div>
   {/* <img src="registration.png" alt="" width={300} height={200}/> */}
   </div>
