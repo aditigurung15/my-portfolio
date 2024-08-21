@@ -251,7 +251,7 @@ const Home = () => {
   <div className="project-info">
   <p>Project 6: Simple Registration Page</p>
   <p>The app has been crafted using React library.</p>
-  <p>The app will help to register a user and login tp the page. User can log out bit clicking on the logout button.</p>
+  <p>The app will help to register a user and login tp the page. User can log out by clicking on the logout button.</p>
 
   <a href="https://registration-page-kappa.vercel.app/" target="_blank"><button>Git access to the code</button></a>
   </div>
