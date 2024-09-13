@@ -30,6 +30,53 @@ const ContactForm = () => {
     setIsopen(!isopen)
   }
 
+
+
+
+  const [alertVisible, setAlertVisible] = useState(false);
+
+  const [formData2, setFormData2] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  // Handler to update state when input values change
+  const handleChange2 = (event) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  // Handler for form submission
+  const handleSubmit2 = (event) => {
+    event.preventDefault();
+
+    // Here, you can perform form submission actions
+    // For example, send formData to a server or an API endpoint
+    console.log('Form Submitted:', formData);
+
+    // Reset the form fields after submission
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
+
+    // Optionally, you can show a success message or perform further actions
+
+    // Show the custom alert
+    setAlertVisible(true);
+
+    // Hide the alert after 3 seconds
+    setTimeout(() => {
+      setAlertVisible(false);
+    }, 3000);
+  };
+
+
   return (
     <>
    
@@ -41,7 +88,7 @@ const ContactForm = () => {
   <li><Link to="/about" className='abc'>About</Link></li>
   <li><Link to="/services" className='abc'>Services</Link></li>
   <li><Link to="/projects" className='abc'>Projects</Link></li>
-  <li><Link to="/contact" className='abc' style={{color:"#00FFFF"}}>(contact)</Link></li>
+  <li><Link to="/contact" className='abc' style={{color:"#00FFFF"}}>( Contact )</Link></li>
 </ul>
 </div>
 
@@ -50,7 +97,7 @@ const ContactForm = () => {
 
 </div> 
 
-<div className="container">
+{/* <div className="container">
 
 <div className="ham-menu" onClick={togglemenu}><GiHamburgerMenu />
 </div>
@@ -65,55 +112,65 @@ const ContactForm = () => {
 
   </ul>
 </div>
-    </div>
+    </div> */}
 
 
 
 
 
-    <div style={styles.container}>
-      <h1>Contact Me</h1>
-      <form onSubmit={handleSubmit} style={styles.form}>
-        <label style={styles.label} htmlFor="name">Name</label>
-        <input
-          style={styles.input}
-          type="text"
-          id="name"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
+    <section className="contact-section">
+      <div className="contact-container">
+        <h1>Contact Me</h1>
+        <form onSubmit={handleSubmit2} className="form">
+          <label htmlFor="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange2}
+            required
+          />
 
-        <label style={styles.label} htmlFor="email">Email</label>
-        <input
-          style={styles.input}
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange2}
+            required
+          />
 
-        <label style={styles.label} htmlFor="message">Message</label>
-        <textarea
-          style={styles.textarea}
-          id="message"
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        />
+          <label htmlFor="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange2}
+            required
+          />
 
-        <button style={styles.button} type="submit">Send Message</button>
-      </form>
-    </div>
-    </>
+          <button type="submit">Send Message</button>
+        </form>
+
+        {/* Custom Alert */}
+        {alertVisible && (
+            <div className="custom-alert">
+              <p>Your message has been sent!</p>
+            </div>
+          )}
+
+
+      </div>
+    </section>
+    
+</>
   )
 };
 
-const styles = {
+
+{/* const styles = {
   container: {
     maxWidth: '600px',
     margin: '50px auto',
@@ -156,7 +213,7 @@ const styles = {
     borderRadius: '4px',
     cursor: 'pointer'
   }
-};
+}; */}
 
 export default ContactForm;
 
