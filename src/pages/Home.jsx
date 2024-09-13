@@ -152,7 +152,7 @@ const Home = () => {
 
 
 
-  <div style={{padding:"20px"}}>
+  <div style={{padding:"30px"}}>
     <h3>Website Development</h3>
 
 
@@ -183,7 +183,7 @@ const Home = () => {
 <div>
   
   <div className="website-dev2">
-  <div style={{padding:"20px"}}>
+  <div style={{padding:"30px"}}>
     <h3>Website Consultancy & Technical Advice</h3>
     <p>
       Offer guidance and expertise to clients on frontend technologies,

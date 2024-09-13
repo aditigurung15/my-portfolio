@@ -257,6 +257,7 @@ transition: all 5s ease-in-out;
   justify-content: space-around;
   align-items: center;
   background-color: white;
+  margin-bottom: 20px;
 }
 
 .about .about-me{
@@ -307,6 +308,8 @@ margin-top: 20px;
   background-color: white;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .services div{
