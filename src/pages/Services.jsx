@@ -19,7 +19,7 @@ const Services = () => {
 <ul>
   <li><Link to="/" className='abc'>Home</Link></li>
   <li><Link to="/about" className='abc'>About</Link></li>
-  <li><Link to="/services" className='abc'>(Services)</Link></li>
+  <li><Link to="/services" className='abc' style={{color:"#00FFFF"}}>(Services)</Link></li>
   <li><Link to="/projects" className='abc'>Projects</Link></li>
   <li><Link to="/contact" className='abc'>contact</Link></li>
 </ul>
@@ -50,12 +50,23 @@ const Services = () => {
 
 
       <div className="services">
+
+
+      <h2 style={{color:"aqua"}}>Services</h2>
+
+
       <div>
 
         <div className="website-dev1">
 
-        <div>
+
+     
+
+        <div style={{padding:"20px"}}>
           <h3>Website Development</h3>
+
+
+
           <p>
             Can build custom websites and admin panels from scratch or using
             Figma to ReactJS, Figma to NextJS, and PSD to HTML, etc. Develop
@@ -65,8 +76,8 @@ const Services = () => {
 
      
 
-          <div>
-          <h3>User interface UI Design</h3>
+          <div style={{padding:"40px"}}>
+          <h3 >User interface UI Design</h3>
           <p>
             Create attractive and intuitive user interfaces that enhance the
             user experience (UX) and align with the client's brand identity.
@@ -76,13 +87,13 @@ const Services = () => {
         </div>
         </div>
 
-        <h2>Services</h2>
+     
 
 
 <div>
         
         <div className="website-dev2">
-        <div>
+        <div style={{padding:"20px"}}>
           <h3>Website Consultancy & Technical Advice</h3>
           <p>
             Offer guidance and expertise to clients on frontend technologies,
@@ -91,7 +102,7 @@ const Services = () => {
           </p>
         
 </div>
-        <div>
+        <div style={{padding:"35px"}}>
           <h3>Responsive Web Design & Optimization</h3>
           <p>
             Adapt existing websites or create new ones to be responsive and

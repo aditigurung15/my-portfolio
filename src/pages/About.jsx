@@ -30,7 +30,7 @@ const frontendSkill=(
 <h3>Time to create...</h3>
 <ul>
   <li><Link to="/" className='abc'>Home</Link></li>
-  <li><Link to="/about" className='abc'>(About)</Link></li>
+  <li><Link to="/about" className='abc' style={{color:"#00FFFF"}}>(About)</Link></li>
   <li><Link to="/services" className='abc'>Services</Link></li>
   <li><Link to="/projects" className='abc'>Projects</Link></li>
   <li><Link to="/contact" className='abc'>contact</Link></li>

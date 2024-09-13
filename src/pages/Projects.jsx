@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi"
+import { color } from 'framer-motion'
 
 const Projects = () => {
 
@@ -18,7 +19,7 @@ const Projects = () => {
   <li><Link to="/" className='abc'> Home</Link></li>
   <li><Link to="/about" className='abc'>About</Link></li>
   <li><Link to="/services" className='abc'>Services</Link></li>
-  <li><Link to="/projects" className='abc'>(Projects)</Link></li>
+  <li><Link to="/projects" className='abc' style={{color:"#00FFFF"}}>( Projects )</Link></li>
   <li><Link to="/contact" className='abc'>contact</Link></li>
 </ul>
 </div>

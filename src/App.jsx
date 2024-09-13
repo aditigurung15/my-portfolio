@@ -71,5 +71,4 @@ function App() {
   );
 }
 
-//  <script src="https://kit.fontawesome.com/b6a2455e06.js" crossorigin="anonymous"></script> 
 export default App;

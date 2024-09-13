@@ -41,7 +41,7 @@ const ContactForm = () => {
   <li><Link to="/about" className='abc'>About</Link></li>
   <li><Link to="/services" className='abc'>Services</Link></li>
   <li><Link to="/projects" className='abc'>Projects</Link></li>
-  <li><Link to="/contact" className='abc'>(contact)</Link></li>
+  <li><Link to="/contact" className='abc' style={{color:"#00FFFF"}}>(contact)</Link></li>
 </ul>
 </div>
 

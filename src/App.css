@@ -318,7 +318,7 @@ margin-top: 20px;
 }
 
 .services div .website-dev1{
-  width: 70%;
+  width: 85%;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -333,12 +333,17 @@ margin-top: 20px;
 
 
 .services div .website-dev1 div{
-  height: 400px;
+  height: auto;
   box-shadow: rgba(204, 245, 3, 0.35) 0px 5px 15px;
+  
+}
+
+.services div .website-dev1 div h3{
+  width: 50%;
 }
 
 .services div .website-dev2{
-  width: 100%;
+  width: 85%;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -348,10 +353,16 @@ margin-top: 20px;
 
 .services div .website-dev2 div{
   width: 40%;
-  height: 400px;
+  height: auto;
   box-shadow: rgba(204, 245, 3, 0.35) 0px 5px 15px;
   text-wrap: wrap;
+ 
 }
+
+.services div .website-dev2 div h3{
+  width: 50%;
+}
+
 
 .project{
   margin-top: 50px;
@@ -375,7 +386,7 @@ margin-top: 20px;
 }
 
 .project-container .projects{
-  box-shadow: rgba(232, 244, 5, 0.988) 0px 5px 15px;
+  /* box-shadow: rgba(232, 244, 5, 0.988) 0px 5px 15px; */
   padding: 10px;
   margin-bottom: 30px;
 }
