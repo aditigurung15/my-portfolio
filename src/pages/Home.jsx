@@ -229,7 +229,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button>Git access to the code</button>
+              <button>Git access to the website</button>
             </a>
           </div>
 
@@ -245,7 +245,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button>Git access to the code</button>
+              <button>Git access to the website</button>
             </a>
           </div>
 
@@ -263,7 +263,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button>Git access to the code</button>
+              <button>Git access to the website</button>
             </a>
           </div>
 
