@@ -13,6 +13,7 @@ const Home = () => {
       typeSpeed: 100,
       backSpeed: 50,
       loop: true,
+      showCursor: false, 
     };
     const typed = new Typed(typedref.current, options);
     return () => {
@@ -221,8 +222,7 @@ const Home = () => {
           <div className="project-item">
             <p>Project 1: Weather App</p>
             <p>
-              A weather app crafted using HTML, CSS, and JavaScript that shows
-              weather details every 3 hours.
+            "A react weather app that fetches real-time weather data.
             </p>
             <a
               href="https://weather-example-nu.vercel.app/"
@@ -252,23 +252,6 @@ const Home = () => {
 
 
 
-          <div className="project-item">
-            <p>Project 3: CHUCK NORRIS JOKE GENERATOR </p>
-            <p>
-            The app has been crafted using HTML, CSS and JavaScript. The interface has a button that generates joke         upon clicking. 
-            </p>
-            <a
-              href="https://jokes-api-zeta.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button>Git access to the code</button>
-            </a>
-          </div>
-
-
-
-
 
           <div className="project-item">
             <p>Project 4: SIMPLE SHOPPING CART </p>
@@ -288,36 +271,9 @@ const Home = () => {
 
 
 
-          <div className="project-item">
-            <p>Project 5: SIMPLE REGISTRATION PAGE </p>
-            <p>
-            | The app has been crafted using React library. The app performs arithmetic operations and calculates the result
-            </p>
-            <a
-              href="https://registration-page-kappa.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button>Git access to the code</button>
-            </a>
-          </div>
 
 
 
-
-          <div className="project-item">
-            <p>Project 6: GALLARY IMAGES  </p>
-            <p>
-            When clicked on "+Add image" button a new window pops up to add new images to the gallery. Left and right arrow buttons to be used to scroll the images
-            </p>
-            <a
-              href="https://assignment-seven-silk.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button>Git access to the code</button>
-            </a>
-          </div>
 
 
 

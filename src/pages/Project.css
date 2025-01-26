@@ -49,6 +49,23 @@
   .project-info button:hover {
     background: linear-gradient(to right, #f9d423, #f83600);
   }
+
+  .tech-box {
+    display: inline-block; /* To make each item appear next to each other */
+    background-color: #d4dcdc;  /* Background color for the box */
+    color: white;  /* Text color */
+    padding: 8px 12px;  /* Padding around the text */
+    margin-right: 10px;  /* Space between the boxes */
+    font-size: 14px;  /* Font size */
+    border-radius: 4px;  /* Rounded corners */
+    text-align: center;  /* Center the text inside the box */
+    font-weight: bold;  /* Make the text bold */
+  }
+  
+  .project-buttons {
+    margin-top: 10px; /* Space between the tech boxes and other content */
+  }
+  
   
   /* Responsive Styles */
   @media (max-width: 768px) {

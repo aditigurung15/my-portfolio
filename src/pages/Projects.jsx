@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
-import './Project.css'
+import './Project.css';
 
 const Projects = () => {
   const [isopen, setIsopen] = useState(false);
@@ -32,43 +32,38 @@ const Projects = () => {
         </div>
 
         <div className="projects">
-          {[
-            {
-              title: "Project 1: Weather App",
-              description: "The app has been crafted using HTML, CSS and Javascript. It sets the details of weather for every 3 hours.",
-              link: "https://weather-example-nu.vercel.app/",
-            },
-            {
-              title: "Project 2: Signature-Clear-Download",
-              description: "The app has been crafted using HTML, CSS and Javascript. Enabling the feature to create, clear, download and retrieve a signature.",
-              link: "https://signature-xi-one.vercel.app/",
-            },
-            {
-              title: "Project 3: Chuck Norris Jokes Generator",
-              description: "The app has been crafted using HTML, CSS and Javascript. The interface has a button that generates a joke upon clicking.",
-              link: "https://jokes-api-zeta.vercel.app/",
-            },
-            {
-              title: "Project 4: Simple Calculator",
-              description: "The app has been crafted using React library. The app performs arithmetic operations and calculates the result.",
-              link: "https://simple-calculator-gules-three.vercel.app/",
-            },
-            {
-              title: "Project 5: Simple Shopping Cart",
-              description: "The app has been crafted using React library. The app adds an item to the cart and removes it by clicking the add and remove button. Two buttons '+' and '-' are also present to increase and decrease the number of products.",
-              link: "https://simple-shopping-cart-omega.vercel.app/",
-            },
-            {
-              title: "Project 6: Simple Registration Page",
-              description: "The app has been crafted using React library. The app performs arithmetic operations and calculates the result.",
-              link: "https://registration-page-kappa.vercel.app/",
-            },
-          ].map((project, index) => (
+          {[{
+            title: "Project 1: Weather App",
+            description: "A react weather app that fetches real-time weather data.",
+            link: "https://weather-example-nu.vercel.app/",
+            buttons: ["React", " fetchAPI", " React.component"]  // Text button with "React"
+          },
+          {
+            title: "Project 2: Signature-Clear-Download",
+            description: "An app to create, clear, download, and retrieve signatures using HTML, CSS, and JavaScript.",
+            link: "https://signature-xi-one.vercel.app/",
+            buttons: ["HTML", "CSS", "JavaScript"]  // Text buttons with tech names
+          },
+        
+          {
+            title: "Project 5: Simple Shopping Cart",
+            description: "A shopping cart built with React, supporting add/remove items and quantity control.",
+            link: "https://simple-shopping-cart-omega.vercel.app/",
+            buttons: ["React", "Hooks", "Javascript"] // Text button with "React"
+          }].map((project, index) => (
             <div className="project-card" key={index}>
               <div className="project-info">
                 <p>{project.title}</p>
                 <p>{project.description}</p>
-                <a href={project.link}><button>Git access to the code</button></a>
+                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                  <button>Git access to the website</button>
+                </a>
+                <div className="project-buttons">
+                  {/* Display technology text boxes */}
+                  {project.buttons.map((text, idx) => (
+                    <span key={idx} className="tech-box">{text}</span>
+                  ))}
+                </div>
               </div>
             </div>
           ))}
